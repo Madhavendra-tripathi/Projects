@@ -4,79 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      body {
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(
-          to right bottom,
-          rgb(41, 39, 39),
-          rgb(108, 106, 106)
-        );
-      }
-
-      .container {
-        padding: 40px;
-        border-radius: 34px;
-        background: rgba(156, 222, 247, 0.9);
-        height: 500px;
-        width: 450px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-      .container input {
-        border: 0px;
-        padding: 5px;
-        font-size: 28px;
-        background: transparent;
-        border-bottom: 4px solid rgb(100, 165, 231);
-        outline: 0;
-        height: 40px;
-        width: 350px;
-      }
-      .container input::placeholder {
-        color: rgb(10, 122, 251);
-        text-align: center;
-      }
-      .imgP {
-        background: rgb(0, 0, 0);
-        margin: 5px;
-        padding: 10px;
-      }
-      .imgP #img {
-        height: 170px;
-        width: 170px;
-        background: transparent;
-        /* margin: 2px; */
-        visibility: hidden;
-        border-radius: 8px;
-        border: 6px double rgb(251, 243, 243);
-        transition: 2s all linear;
-      }
-
-      button{
-        height: 45px;
-        width: 300px;
-        border: 0;
-        outline: 0;
-        background:linear-gradient(to right bottom, rgb(33, 102, 239),rgb(61, 66, 74)) ;
-        margin-top:15px ;
-        color: white;
-        font-weight: 700;
-        font-size: 20px;
-        border-radius: 20px 20px 400px 400px;
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -86,16 +13,7 @@
       <div class="imgP"><img src="" alt="" id="img" /></div>
       <button onclick="generateQR()">Generate code</button>
     </div>
-    <script>
-      let img = document.getElementById("img");
-      let inputji = document.getElementById("inputji");
-
-      function generateQR() {
-        img.src =
-          "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" +
-          inputji.value;
-        img.style.visibility = "visible";
-      }
+    <script src="script.js">
     </script>
   </body>
 </html>
