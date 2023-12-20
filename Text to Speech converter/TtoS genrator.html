@@ -3,67 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Text to speech converter</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{height: 100vh;
-            background: linear-gradient(135deg, lime,rgb(6, 6, 239)100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .cont{
-            background: rgba(61, 61, 61, 0.4);
-            border-radius: 00px 300px 300px 00px;
-            height: 500px;
-            width: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .cont p{
-            background: linear-gradient(135deg, rgb(72, 242, 72),rgb(111, 111, 248)100%);
-            color: transparent;
-            background-clip: text;
-            -webkit-background-clip:text;
-            font-weight: 900;
-            font-size: 32px;
-            margin-bottom: 25px;
-
-        }
-        .cont button{
-            cursor: pointer;
-            margin-top: 20px;
-            font-size: larger;
-            font-weight: 550;
-            height: 50px;
-            width: 31%;
-            background: lime;
-            color: rgb(4, 44, 58);
-            outline: 0;
-            border: 0;
-            border-radius: 0 300px 300px 0;
-        }
-        .text textarea{
-            background: rgb(43, 42, 42);
-            padding: 10px;
-            color: lime;
-            overflow-x: hidden;
-            resize: none;
-            border: 1px solid lime;
-        }
-        .text textarea::placeholder{
-            font-size: 20px;
-            position: relative;
-            top: 55px;
-            left: 70px;
-        }
-    </style>
 </head>
 <body>
     
@@ -74,16 +15,6 @@
         </div>
         <button id="btn">Let me talk</button>
     </div>
-    <script>
-    let btn = document.getElementById("btn");
-let txt = document.getElementById("txt");
-
-btn.addEventListener("click", () => {
-    let speech = new SpeechSynthesisUtterance(txt.value);
-    speechSynthesis.speak(speech);
-});
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
