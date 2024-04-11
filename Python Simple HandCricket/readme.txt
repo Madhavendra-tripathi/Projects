@@ -5,10 +5,6 @@ Rules to play:
 
 Features:
 1. After every ball I have provided stats to look at it how you can improve your stratigies
-2. After the completion of match you can restart game by "y" or if you want to exit press command "n" .
+2. After the completion of match you can restart game by "r" or if you want to exit press command "n" .
 3. It follows all the rules we use to play physically in the game.
 
-
-Features can be added in future:
-1. Currently the game is working on player vs computer method.
-2. I want to transfer game on web browser and want to conduct in between two player from different location can play.
